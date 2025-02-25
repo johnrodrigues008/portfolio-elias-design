@@ -15,18 +15,17 @@ export default function Header() {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [selectedLang, setSelectedLang] = useState("EN");
 
-  const pathname = usePathname(); // Obtém a URL atual
-  const router = useRouter(); // Para mudar de rota sem recarregar
+  const pathname = usePathname();
+  const router = useRouter();
 
   const changeLanguage = (lang: string) => {
     setSelectedLang(lang);
     setIsLangOpen(false);
   };
 
-  // Função para mudar de página sem recarregar
   const handleNavigation = (path: string) => {
     router.push(path);
-    setIsMenuOpen(false); // Fecha o menu no mobile ao clicar
+    setIsMenuOpen(false);
   };
 
   return (
@@ -43,7 +42,6 @@ export default function Header() {
             </button>
           </div>
 
-          {/* MENU DESKTOP */}
           <nav className="hidden md:flex space-x-8">
             {[
               { name: "home", path: "/" },
@@ -63,7 +61,6 @@ export default function Header() {
               </button>
             ))}
 
-            {/* DROPDOWN DE IDIOMA (MENU DESKTOP) */}
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
@@ -89,7 +86,6 @@ export default function Header() {
             </div>
           </nav>
 
-          {/* BOTÃO MENU MOBILE */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -106,7 +102,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* MENU MOBILE */}
       {isMenuOpen && (
         <div className="md:hidden absolute bg-[#282C33] w-full h-[100vh] z-10">
           <nav className="px-2 pt-2 pb-3 space-y-1">
@@ -128,7 +123,6 @@ export default function Header() {
               </button>
             ))}
 
-            {/* DROPDOWN DE IDIOMA (MENU MOBILE) */}
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
