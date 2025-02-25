@@ -54,7 +54,7 @@ export default function Header() {
               <button
                 key={item.path}
                 onClick={() => handleNavigation(item.path)}
-                className={`flex px-3 py-2 rounded-md text-[#ABB2BF] transition-all duration-200 animate-pulse ${
+                className={`flex px-3 py-2 rounded-md text-[#ABB2BF] hover:hover:text-[#C778DD] transition-all duration-200 animate-pulse ${
                   pathname === item.path ? "font-medium text-white" : "font-light text-[#ABB2BF]"
                 }`}
               >
@@ -69,7 +69,7 @@ export default function Header() {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex px-3 py-2 rounded-md text-[#ABB2BF] transition-all"
               >
-                <p className="mr-1">{selectedLang}</p>
+                <p className="mr-1 animate-puls hover:text-[#C778DD]">{selectedLang}</p>
                 <Image src={isLangOpen ? IconLangClose : IconLangOpen} alt="Idiomas" width={10} height={10} />
               </button>
 

@@ -37,8 +37,11 @@ export default function Into() {
               Contact Me !!
             </Button>
           </div>
-          <div>
+          <div className="flex justify-center items-center relative">
             <Image src={HeroImage} alt="Hero Image" width={500} height={500} />
+            <div className="absolute bottom-[-45px]">
+              <p className="flex items-center border border-[#ABB2BF]  mr-1 px-[8px] py-[10px] text-[16px] text-[#ABB2BF] md:w-[428px]"><div className="bg-[#C778DD] w-[16px] h-[16px] mr-[10px]"></div> Currently working on <strong className="ml-2 text-white">Portfolio</strong></p>
+            </div>
           </div>
         </div>
       </section>
