@@ -1,11 +1,7 @@
-import Header from "@/components/header";
+"use client";
+
 import Into from "@/components/into";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <Into />
-    </>
-  );
+  return <Into />;
 }
