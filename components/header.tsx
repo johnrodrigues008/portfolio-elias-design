@@ -54,7 +54,7 @@ export default function Header() {
               <button
                 key={item.path}
                 onClick={() => handleNavigation(item.path)}
-                className={`flex px-3 py-2 rounded-md text-[#ABB2BF] transition-all duration-200 ${
+                className={`flex px-3 py-2 rounded-md text-[#ABB2BF] transition-all duration-200 animate-pulse ${
                   pathname === item.path ? "font-medium text-white" : "font-light text-[#ABB2BF]"
                 }`}
               >
