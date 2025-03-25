@@ -1,6 +1,4 @@
 import Image from "next/image";
-import FrameContactInfo from "../public/image/frame-contact-info.svg";
-
 import LogoDefault from "../public/icon/logo-default.svg";
 
 export default function Footer() {
