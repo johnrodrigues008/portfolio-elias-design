@@ -6,11 +6,11 @@ import FrameBoxInfo from "../public/image/frame-box-info.svg";
 export default function Skills() {
 
   return (
-    <section className="skills w-full mt-[90px] h-full  mb-6 md:mb-0 md:mt-[74px] md:h-[100vh]">
+    <section className="skills w-full mt-[90px] h-[80vh] mb-6 md:mb-0 md:mt-[74px]">
       <div className="flex md:flex-row items-center justify-between w-full">
         <div className="flex items-center w-full">
           <h2 className="text-[24px] md:text-[32px] font-medium mr-4 whitespace-nowrap">
-            <span className="text-[#C778DD]">#</span>skills
+            <span className="text-[#C778DD]">#</span>Skills
           </h2>
 
           <div className="h-[1px] w-full max-w-[511px] bg-[#C778DD] animate-pulse mr-[10px]"></div>

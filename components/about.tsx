@@ -10,7 +10,7 @@ export default function About() {
         router.push("/contact");
     };
     return (
-        <section className="about w-full mt-[90px] h-full  mb-6 md:mb-0 md:mt-[74px] md:h-[100vh]">
+        <section className="about w-full mt-[100px] h-[80vh]  mb-6 md:mb-0 md:mt-[74px]">
             <div className="flex md:flex-row items-center justify-between w-full">
                 <div className="flex items-center w-full">
                     <h2 className="text-[24px] md:text-[32px] font-medium mr-4 whitespace-nowrap">
